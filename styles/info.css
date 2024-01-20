@@ -1,0 +1,76 @@
+
+body {
+    background-image: url(../images/yuen_info/info.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    font-family: Noto Serif JP;
+    font-size: 12px;
+
+    display: grid;
+    grid-template-rows: 30px 30px 30px 150px 30px;
+    grid-template-columns: 200px 200px;
+    grid-template-areas: 
+        'season season'
+        'lunch dinner'
+        'price1 price2'
+        'hour1 hour2'
+        'close close';
+
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item1 {
+    grid-area: season;
+   
+}
+
+.item2 {
+    grid-area: lunch;
+}
+
+.item3 {
+    grid-area: dinner;
+}
+
+.item4 {
+    grid-area: price1;
+}
+
+.item5 {
+    grid-area: price2;
+}
+
+.item6 {
+    grid-area: hour1;
+}
+
+.item7 {
+    grid-area: hour2;
+}
+
+.item8 {
+    grid-area: close;
+}
