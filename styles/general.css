@@ -3,9 +3,10 @@
     padding: 0;
 }
 
-html, body {
+/* html, body {
     overflow: hidden;
-}
+    background-color: black;
+} */
 
 
 .navbar {
@@ -18,7 +19,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 1000; 
+    z-index: 1; 
 }
 
 .navbar a{
@@ -70,4 +71,18 @@ html, body {
     white-space: nowrap;
     margin-bottom: 50px;
     font-family: Noto Serif JP;
+}
+
+.dropdown {
+    display: none;
+}
+
+
+@media (max-width:600px) {
+    .navbar {
+        display: none;
+    }
+
+    
+
 }
