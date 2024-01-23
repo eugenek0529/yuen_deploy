@@ -14,7 +14,7 @@ body {
 
 
 .welcome-message {
-    z-index: 100;
+   
     position: absolute;
     width: 70%;
     
@@ -25,7 +25,7 @@ body {
     border-width: 1px; */
 
     max-width: 800px;
-    min-width: 400px;
+    min-width: 300px;
 
     flex-shrink: none;
 
@@ -54,4 +54,15 @@ body {
 
 .welcome-message p, h2 {
     font-family: Noto Serif JP;
+}
+
+@media (max-width:600px) {
+    .welcome-message {
+        width: 60%;
+
+    }
+    .welcome-message p {
+        color: white;
+        font-size: 12px;
+    }
 }

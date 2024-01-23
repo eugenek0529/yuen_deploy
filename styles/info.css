@@ -12,6 +12,16 @@ body {
     height: 100vh;
 }
 
+@media (max-width:600) {
+    .container{
+        font-size: 10px;
+        grid-template-rows: 30px 30px 30px 150px 30px;
+         grid-template-columns: 100px 100px;
+    }
+    
+}
+
+
 
 .container {
     font-family: Noto Serif JP;
