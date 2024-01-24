@@ -17,6 +17,7 @@ body {
 
 .welcome-message {
    
+    padding: 20px;
     position: absolute;
     width: 70%;
     
