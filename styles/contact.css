@@ -13,32 +13,80 @@ body {
 }
 
 
+/* grid */ 
 
 .info-box {
-    /* margin-top: 500px;
-    margin-left: 250px;
-    margin-right: 100px;
-
-     */
-    margin-top: 350px;
-    margin-left: 100px;
-    background-color: transparent;
-    z-index: 4000;
-
-    display: flex;
-}
-
-.info-section {
-    margin-right: 20px;
-    flex:1;
-    
-}
-
-.info-section h3, p {
-    color: white;
     font-family: Noto Serif JP;
 }
 
-.info-section p {
-    font-size: 13px;
+@media (min-width:500px) {
+    .info-box {
+
+        margin-top: 400px;
+        display: grid;
+        font-size: 12px;
+        grid-template-rows: 50px auto auto 10px;
+        grid-template-columns: 250px 250px;
+        grid-template-areas: 
+            'location contact'
+            'address email'
+            'address phone'
+            'address instagram';
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
+
+@media (max-width:499px){
+    .info-box {
+
+        margin-top: 400px;
+        display: grid;
+        font-size: 10px;
+        grid-template-rows: 50px auto auto 10px;
+        grid-template-columns: 150px 150px;
+        grid-template-areas: 
+            'location contact'
+            'address email'
+            'address phone'
+            'address instagram';
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    grid-area: location;
+}
+
+.item2 {
+    grid-area: contact;
+}
+
+.item3 {
+    grid-area: address;
+    max-width: 100%;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.item4 {
+    grid-area: email;
+}
+
+.item5 {
+    grid-area: phone;
 }

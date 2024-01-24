@@ -12,37 +12,57 @@ body {
     height: 100vh;
 }
 
-@media (max-width:600) {
+.container {
+    font-family: Noto Serif JP;
+}
+
+@media (max-width:500px) {
     .container{
         font-size: 10px;
+
+        display: grid;
         grid-template-rows: 30px 30px 30px 150px 30px;
-         grid-template-columns: 100px 100px;
+         grid-template-columns: 120px 120px;
+         grid-template-areas: 
+            'season season'
+            'lunch dinner'
+            'price1 price2'
+            'hour1 hour2'
+            'close close';
+    
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+    
+        justify-content: center;
+        align-items: center;
     }
     
 }
 
-
-
-.container {
-    font-family: Noto Serif JP;
-    font-size: 12px;
-
-    display: grid;
-    grid-template-rows: 30px 30px 30px 150px 30px;
-    grid-template-columns: 200px 200px;
-    grid-template-areas: 
-        'season season'
-        'lunch dinner'
-        'price1 price2'
-        'hour1 hour2'
-        'close close';
-
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-
-    justify-content: center;
-    align-items: center;
+@media (min-width:501px) {
+    .container {
+        
+        font-size: 12px;
+    
+        display: grid;
+        grid-template-rows: 30px 30px 30px 150px 30px;
+        grid-template-columns: 200px 200px;
+        grid-template-areas: 
+            'season season'
+            'lunch dinner'
+            'price1 price2'
+            'hour1 hour2'
+            'close close';
+    
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+    
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+
 
 
 .item {
