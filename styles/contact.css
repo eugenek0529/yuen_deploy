@@ -68,6 +68,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-decoration: none;
 }
 
 .item1 {
