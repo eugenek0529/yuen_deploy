@@ -93,4 +93,6 @@ body {
 
 .item5 {
     grid-area: phone;
+    color: white;
+    text-decoration: none;
 }
