@@ -27,3 +27,10 @@ Mobile responsive
 
 Gallery (utilized Javascript to create slide show functionality)
 <img width="1443" alt="image" src="https://github.com/eugenek0529/yuen_deploy/assets/111472652/c5769cfe-242f-4bbd-9167-7d10b07ea5d5">
+
+
+Toggle Menu for Mobile (Input checkbox is inserted as display none, and is is used to display toggle menu show and hide)
+
+
+<img width="484" alt="image" src="https://github.com/eugenek0529/yuen_deploy/assets/111472652/a141dc16-3469-48af-b185-984b81e19e5d">
+
