@@ -6,6 +6,8 @@ body {
     background-attachment: fixed;
     background-position: center;
 
+    background-color: black;
+
     display: flex;
     justify-content: center;
     align-items: center;
