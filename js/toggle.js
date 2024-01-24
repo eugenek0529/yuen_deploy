@@ -6,3 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
         menuToggle.checked = !menuToggle.checked;
     });
 });
+
+const path = window.location.pathname;
+    if (path.endsWith('.html') && path !== '/404.html') {
+      const newPath = path.replace(/\.html$/, '');
+      window.location.replace(newPath);
+    }
