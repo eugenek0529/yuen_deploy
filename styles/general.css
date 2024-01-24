@@ -78,7 +78,7 @@
 
 
 @media (min-width:601px){
-    .toggle-btn, .menu-toggle, .toggle-menu{
+    .toggle-btn, .menu-toggle, .toggle-menu {
         display: none;
     }
 }
@@ -140,6 +140,12 @@
         color: white;
         font-size: 22px;
         font-family: Noto Serif JP;
+    }
+
+    .links img {
+        
+        width: 30px;
+        height: 30px;
     }
     
 
